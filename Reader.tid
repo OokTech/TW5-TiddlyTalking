@@ -1,0 +1,57 @@
+title: $:/plugins/inmysocks/TiddlyTalking/Reader
+
+Select the voice and language you wish to use (if the list is empty click `Update List`):
+
+<$select
+  tiddler='$:/settings/VoicesList'
+  field='selected_voice'
+>
+  <option
+    value=''
+  >
+    --
+  </option>
+  <$list
+    filter='[list[$:/settings/VoicesList!!name_list]]'
+  >
+    <option>
+      <<currentTiddler>>
+    </option>
+  </$list>
+</$select>
+<$button>
+  Update List
+  <$action-getvoices/>
+</$button>
+
+Select to read:
+<$radio
+  tiddler='$:/state/TiddlyTalking/WhatToRead'
+  value='text'
+>
+  Enter Text
+</$radio>
+<$radio
+  tiddler='$:/state/TiddlyTalking/WhatToRead'
+  value='title'
+>
+  Enter Tiddler Title
+</$radio>
+<$radio
+  tiddler='$:/state/TiddlyTalking/WhatToRead'
+  value='filter'
+>
+  Enter Filter
+</$radio>
+
+<$reveal
+  type='match'
+  state='$:/state/TiddlyTalking/WhatToRead'
+  text='text'
+>
+  <$edit-text
+    tiddler='$:/state/TiddlyTalking/TextToRead'
+    default='Enter Text To Have It Read'
+    placeholder='Enter Text To Have It Read'
+  />
+</$reveal>

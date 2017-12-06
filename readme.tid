@@ -1,0 +1,40 @@
+title: $:/plugins/inmysocks/TiddlyTalking
+
+This is the prototype plugin for TiddlyTalking. Once the plugin is a bit more polished it will be released under OokTech and added to the OokTech plugin library. If it is liked enough it may be added to the core later.
+
+This plugin adds action widgets for text to speech in a tiddlywiki. It has action widgets to play, pause, resume and stop speech.
+
+Usage examples:
+
+!action-readtiddler
+
+This will read the rendered text of a tiddler (that is the text that is visible when viewing the tiddler).
+
+Usage: `<$button>Read Tiddler<$action-readtiddler tiddler=TiddlerName/></$button>`
+
+|!Parameter |!Description |
+|tiddler |The tiddler that should be read aloud. |
+
+!action-pauseresumespeech
+
+This will pause any currently playing speech or if there is paused speech it will resume it.
+
+Usage: `<$button>Pause/Resume<$action-pauseresumespeech/></$button>`
+
+!action-pausespeech
+
+This will pause any currenly playing speech to pause.
+
+Usage: `<$button>Pause<$action-pausespeech/></$button>`
+
+!action-resumespeech
+
+This will resume any currently paused speech.
+
+Usage: `<$button>Resume<$action-resumespeech/></$button>`
+
+!action-stopspeech
+
+This will stop any speech, paused or playing.
+
+Usage: `<$button>Stop<$action-stopspeech/></$button>`
