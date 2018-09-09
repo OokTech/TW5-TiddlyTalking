@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/inmysocks/TiddlyTalking/action-pausespeech.js
+title: $:/plugins/OokTech/TiddlyTalking/action-pausespeech.js
 type: application/javascript
 module-type: widget
 

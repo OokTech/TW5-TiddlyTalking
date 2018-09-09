@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/inmysocks/TiddlyTalking/action-getvoices.js
+title: $:/plugins/OokTech/TiddlyTalking/action-getvoices.js
 type: application/javascript
 module-type: widget
 

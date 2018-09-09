@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/inmysocks/TiddlyTalking/action-resumespeech.js
+title: $:/plugins/OokTech/TiddlyTalking/action-resumespeech.js
 type: application/javascript
 module-type: widget
 
